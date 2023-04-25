@@ -23,19 +23,19 @@ class Student {
     }
 
     public function getName() {
-        return "$this->name\n";
+        return $this->name;
     }
 
     public function getSecondName() {
-        return "$this->secondName\n";
+        return $this->secondName;
     }
 
     public function getAge() {
-        return "$this->age\n";
+        return $this->age;
     }
 
     public function getCourse() {
-        return "$this->course\n";
+        return $this->course;
     }
 
     public function setName($name) {
