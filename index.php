@@ -57,10 +57,10 @@ class Student {
 
 $student = new Student('Tatiana', 'Beliaeva', '30', 'WD-10onl');
 
-echo $student->getName();
-echo $student->getSecondName();
-echo $student->getAge();
-echo $student->getCourse();
+echo $student->getName() . "\n";
+echo $student->getSecondName() . "\n";
+echo $student->getAge() . "\n";
+echo $student->getCourse() . "\n";
 
 
 
