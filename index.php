@@ -164,3 +164,45 @@ echo $circle->calculateArea();
 
 4.1 Конструктор класса, который принимает значения для всех полей и устанавливает их соответствующим образом.
 4.2 Метод для проверки, является ли человек совершеннолетним - isAdult(), который возвращает true, если возраст человека больше или равен 18, и false в противном случае.
+
+
+class Person {
+
+    private $name;
+    private $age;
+    private $gender;
+
+
+    public function __construct($name, $age, $gender) {
+        $this->name = $name;
+        $this->age = $age;
+        $this->gender = $gender;
+    }
+
+    public function getName() {
+        return $this->name;
+    }
+
+    public function getAge() {
+        return $this->age;
+    }
+
+    public function isAdult() {
+        if ($this->age >= 18) {
+            return 'he/she is Adult';
+        } else {
+            return 'he/she is Underage';
+        }
+    }
+
+    public function getGender() {
+        return $this->gender;
+    }
+}
+
+$person = new Person('Ivan', '15', 'man');
+
+echo $person->getName() . "\n";
+echo "({$person->getGender()})" . "\n";
+echo $person->getAge() . "\n" . "- ";
+echo $person->isAdult() . "\n";
